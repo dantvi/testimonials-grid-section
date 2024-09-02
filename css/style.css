@@ -20,8 +20,43 @@ body {
     font-size: 1.3rem;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 500;
+    background-color: hsl(0, 0%, 95%);
 }
 
+h2 {
+    z-index: ;
+}
+
+.content {
+    display: grid;
+    padding: 1rem;
+    gap: 2.4rem;
+}
+
+.testimonial {
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+#daniel {
+    background: var(--primary-moderate-violet);
+}
+
+#jonathan {
+    background: var(--primary-very-dark-grayish-blue);
+}
+
+#jeanette, #kira {
+    background: var(--primary-white);
+}
+
+#patrick {
+    background: var(--primary-very-dark-blackish-blue);
+}
 
 
 
