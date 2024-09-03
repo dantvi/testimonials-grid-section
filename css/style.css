@@ -36,14 +36,9 @@ body {
     border-radius: 5px;
 }
 
-#daniel {
-    background: var(--primary-moderate-violet);
-}
-
 .user-info {
     display: grid;
     grid-template-columns: 2.8rem auto;
-    border: 1px solid;
     column-gap: 1.7rem;
     align-items: center;
 }
@@ -54,10 +49,6 @@ body {
     height: auto;
     border-radius: 100px;
     justify-self: center;
-}
-
-#daniel .profile-img {
-    border: 0.2rem solid var(--neutral-light-violet);
 }
 
 .user-status {
@@ -76,14 +67,35 @@ body {
     color: var(--neutral-light-gray);
 }
 
+#daniel {
+    background: var(--primary-moderate-violet);
+}
 
-
-
-
+#daniel .profile-img {
+    border: 0.2rem solid var(--neutral-light-violet);
+}
 
 #jonathan {
     background: var(--primary-very-dark-grayish-blue);
 }
+
+#jonathan .profile-img {
+    border: 0.2rem solid var(--primary-very-dark-grayish-blue);
+}
+
+#jonathan > blockquote > .statement {
+    margin-bottom: 1.6rem;
+}
+
+#jonathan > blockquote > .quote {
+    color: var(--primary-white);
+}
+
+
+
+
+
+
 
 #jeanette, #kira {
     background: var(--primary-white);
