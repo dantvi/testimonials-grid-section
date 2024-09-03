@@ -8,6 +8,8 @@
     --neutral-light-violet: hsl(264, 82%, 70%);
     --neutral-light-gray: hsl(0, 0%, 81%);
     --neutral-light-grayish-blue: hsl(210, 46%, 95%);
+
+    --test: rgb(115, 63, 200);
 }
 
 html {
@@ -36,6 +38,16 @@ body {
     padding: 2.6rem 3.2rem 3.2rem 3.2rem;
     border-radius: 10px;
 }
+
+/* .quotation {
+    position: absolute;
+    top: 0rem;
+    right: 8rem;
+}
+
+.index-1 {
+    z-index: 1;
+} */
 
 .user-info {
     display: grid;
@@ -69,14 +81,19 @@ body {
 }
 
 #daniel {
-    background: var(--primary-moderate-violet);
+    background: 
+    url(../images/bg-pattern-quotation.svg) no-repeat top right 2.4rem,
+    linear-gradient(
+      rgba(115, 63, 200, 1), 
+      rgba(115, 63, 200, 1)
+    );
 }
 
 #daniel .profile-img {
     border: 0.2rem solid var(--neutral-light-violet);
 }
 
-#daniel > blockquote > .statement {
+#daniel>blockquote>.statement {
     margin-bottom: 4rem;
 }
 
@@ -88,11 +105,12 @@ body {
     border: 0.2rem solid var(--primary-very-dark-grayish-blue);
 }
 
-#jonathan > blockquote > .quote {
+#jonathan>blockquote>.quote {
     color: var(--primary-white);
 }
 
-#jeanette, #kira {
+#jeanette,
+#kira {
     background: var(--primary-white);
     color: var(--primary-very-dark-grayish-blue);
 }
@@ -101,7 +119,7 @@ body {
     border: 0.2rem solid var(--primary-white);
 }
 
-#jeanette > blockquote > .quote {
+#jeanette>blockquote>.quote {
     color: var(--primary-very-dark-grayish-blue);
 }
 
@@ -113,11 +131,11 @@ body {
     border: 0.2rem solid var(--primary-moderate-violet);
 }
 
-#patrick > blockquote > .statement {
+#patrick>blockquote>.statement {
     color: var(--neutral-light-grayish-blue);
 }
 
-#patrick > blockquote > .quote {
+#patrick>blockquote>.quote {
     color: var(--primary-white);
 }
 
@@ -125,7 +143,7 @@ body {
     border: 0.2rem solid var(--primary-white);
 }
 
-#kira > blockquote > .quote {
+#kira>blockquote>.quote {
     color: var(--primary-very-dark-grayish-blue);
 }
 
@@ -146,7 +164,7 @@ body {
         grid-area: 1 / 1 / 3 / 2;
     }
 
-    #daniel > blockquote > .statement {
+    #daniel>blockquote>.statement {
         margin-bottom: 1.6rem;
     }
 }
@@ -160,6 +178,12 @@ body {
 
     #daniel {
         grid-area: 1 / 1 / 2 / 3;
+        background: 
+        url(../images/bg-pattern-quotation.svg) no-repeat top right 8rem,
+        linear-gradient(
+            rgba(115, 63, 200, 1), 
+            rgba(115, 63, 200, 1)
+        );
     }
 
     #jeanette {
