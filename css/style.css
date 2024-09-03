@@ -5,6 +5,7 @@
     --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
     --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
     --primary-white: hsl(0, 0%, 100%);
+    --neutral-light-violet: hsl(264, 82%, 70%);
     --neutral-light-gray: hsl(0, 0%, 81%);
     --neutral-light-grayish-blue: hsl(210, 46%, 95%);
 }
@@ -35,6 +36,10 @@ body {
     border-radius: 5px;
 }
 
+#daniel {
+    background: var(--primary-moderate-violet);
+}
+
 .user-info {
     display: grid;
     grid-template-columns: 2.8rem auto;
@@ -51,17 +56,30 @@ body {
     justify-self: center;
 }
 
+#daniel .profile-img {
+    border: 0.2rem solid var(--neutral-light-violet);
+}
+
 .user-status {
     opacity: 0.5;
 }
 
-#daniel {
-    background: var(--primary-moderate-violet);
+.statement {
+    margin: 1.8rem 0 4rem 0;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-#daniel .profile-img {
-    border: 0.2rem solid hsl(264, 82%, 70%);
+.quote {
+    opacity: 0.7;
+    line-height: 1.8rem;
+    color: var(--neutral-light-gray);
 }
+
+
+
+
+
 
 #jonathan {
     background: var(--primary-very-dark-grayish-blue);
